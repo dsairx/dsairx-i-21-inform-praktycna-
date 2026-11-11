@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Моя персональна вебсторінка</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f5fa; color: #273346; font-family: Arial, sans-serif; line-height: 1.7; }
+    header { background: #20385a; color: white; padding: 50px 20px; text-align: center; }
+    header h1 { margin: 0 0 8px; font-size: 38px; }
+    header p { color: #d6e3f4; margin: 0; }
+    main { max-width: 980px; margin: 30px auto; padding: 0 18px; }
+    section { background: #fff; border-radius: 14px; padding: 28px; margin-bottom: 23px; box-shadow: 0 4px 20px #20385a12; }
+    h2 { color: #234b7a; border-bottom: 2px solid #d9e7f8; padding-bottom: 9px; margin-top: 0; }
+    h3 { color: #355e8c; }
+    a { color: #145da0; }
+    .highlight { background: #fff1bd; padding: 1px 5px; }
+    .special-font { font-family: 'Monotype Corsiva', 'URW Chancery L', cursive; font-size: 22px; }
+    .image-box { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .image-box img { width: 300px; max-width: 100%; height: auto; border-radius: 8px; }
+    .image-box p { flex: 1; min-width: 220px; }
+    iframe { max-width: 100%; border: 0; border-radius: 8px; }
+    .embed-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    footer { text-align: center; color: #5a6b83; padding: 12px 20px 35px; }
+    @media (max-width: 540px) { header h1 { font-size: 27px; } section { padding: 18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Моя персональна вебсторінка</h1>
+    <p>Про мене • Мої улюблені предмети • Контактні дані</p>
+  </header>
+  <main>
+    <section>
+      <h2>Про мене</h2>
+      <p>Вітаю! Це моя перша <u>персональна вебсторінка</u>, яку створено за допомогою HTML.</p>
+      <p>Мені цікаво дізнаватися нове, працювати з комп'ютером та розвивати свої навички. <strong>Особливо подобається створювати власні проєкти.</strong></p>
+      <p>Я переконаний, що <span style="color: #b52940;">знання та наполегливість допомагають досягати мети</span>.</p>
+      <p class="special-font">Навчання — це можливість щодня ставати кращими!</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Мої улюблені предмети</h2>
+      <p>У навчанні мені найбільше подобаються предмети, які дають змогу працювати з технологіями та розвивати логічне мислення.</p>
+      <p>Ось кілька моїх улюблених дисциплін:</p>
+      <ul style="list-style-type: circle;">
+        <li>Інформатика</li>
+        <li>Англійська мова</li>
+        <li>Математика</li>
+        <li>Українська мова</li>
+      </ul>
+      <h3>Чому мені подобається інформатика?</h3>
+      <p>На уроках інформатики можна <b>створювати сайти</b>, знайомитися з програмуванням та вчитися ефективно використовувати цифрові інструменти.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Моє місто — Луцьк</h2>
+      <div class="image-box">
+        <a href="https://commons.wikimedia.org/wiki/File:Lutsk_castle_(2).jpg" target="_blank" rel="noopener noreferrer" title="Джерело фотографії">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lutsk_castle_%282%29.jpg?width=600" width="300" alt="Замок Любарта в Луцьку">
+        </a>
+        <p>Луцьк — місто з цікавою історією та архітектурою. Одна з його найвідоміших пам'яток — <span class="highlight">замок Любарта</span>. Натисніть на фотографію, щоб переглянути її джерело.<br><small>Фото: Xsandriel, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</small></p>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>Цікаві матеріали з інших сайтів</h2>
+      <p>Нижче за допомогою тегу <code>&lt;iframe&gt;</code> додано відео YouTube і карту Google Maps. Для перегляду потрібен інтернет; деякі браузери можуть обмежувати вбудований перегляд.</p>
+      <div class="embed-grid">
+        <div>
+          <h3>Відео YouTube</h3>
+          <iframe width="430" height="250" src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE" title="Урок HTML для початківців" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          <p><a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank" rel="noopener noreferrer">Відкрити відео на YouTube</a></p>
+        </div>
+        <div>
+          <h3>Карта Луцька</h3>
+          <iframe width="430" height="250" src="https://maps.google.com/maps?q=Lutsk%20Castle%2C%20Lutsk&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Карта Луцька — Замок Любарта" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Lutsk+Castle" target="_blank" rel="noopener noreferrer">Відкрити карту в Google Maps</a></p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>Контактні дані</h2>
+      <p>Дякую, що відвідали мою вебсторінку! Вона створена для практичної роботи з інформатики.</p>
+      <p>Корисний ресурс: <a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Довідник HTML на MDN</a>.</p>
+    </section>
+  </main>
+  <footer>Практична робота — Розробка пов'язаних вебсторінок</footer>
+</body>
+</html>
